@@ -280,11 +280,12 @@ p {
   color: rgb(190, 197, 200);
   font-size: 5rem;
   font-weight: 500;
-  @media(max-width: 56.25rem)
-  {
-    .l{
-      font-size : 3rem;
-    }
+}
+
+@media(max-width: 56.25rem)
+{
+  .l{
+    font-size : 4rem;
   }
 }
 
@@ -372,6 +373,12 @@ p {
    text-decoration: none;
    transform: scale(1.0);
    transition: transform 0.5s;
+ }
+ @media (max-width: 56.25rem)
+ {
+   .fa{
+     padding: 1rem;
+   }
  }
  .fa:hover{
    transform: scale(1.5);
