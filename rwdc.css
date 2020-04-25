@@ -1,0 +1,360 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background-color: #222629;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #dde7ed;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {
+
+  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+
+  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+.col-12 li {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/* Navigation Bar*/
+.col-12 li a {
+  display: block;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Bebas Neue";
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 19px;
+}
+
+.col-12 li a:hover {
+  background-color: #86c232;
+}
+
+/* End of Navigation Bar*/
+/*Title*/
+.col-12 h1 {
+  color: #86c232;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.l {
+  font-family: Source Sans Pro;
+  color: rgb(190, 197, 200);
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.col-12 h4 {
+  margin-top: -40px;
+  font-weight: 200;
+}
+
+#initiative {
+  font-family: courier new;
+}
+
+/*End of title*/
+
+/*Image Grid*/
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 300px 300px;
+
+}
+
+@media(max-width : 900px) {
+  .grid_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.item1, .item2, .item3, .item4, .item6, .item5 {
+  padding: 5px;
+  text-align: center;
+}
+
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / span 2;
+}
+
+.item3 {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.item4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / span 3;
+}
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img,
+.item6 img,
+.item5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/*Image Hover*/
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img,
+.item6 img,
+.item5 img{
+  transition: transform 1s ease;
+}
+.item1 img:hover,
+.item2 img:hover,
+.item3 img:hover,
+.item4 img:hover,
+.item5 img:hover,
+.item6 img:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 50px 60px rgba(0, 0, 0, 0.91);
+}
+/*End of Image Hover*/
