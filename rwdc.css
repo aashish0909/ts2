@@ -279,8 +279,14 @@ p {
 .l {
   font-family: Source Sans Pro;
   color: rgb(190, 197, 200);
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 500;
+  @media(max-width: 56.25rem)
+  {
+    .l{
+      font-size : 3rem;
+    }
+  }
 }
 
 .col-12 h4 {
@@ -302,7 +308,7 @@ p {
 
 }
 
-@media(max-width : 900px) {
+@media(max-width : 56.25rem) {
   .grid_container {
     display: flex;
     flex-wrap: wrap;
