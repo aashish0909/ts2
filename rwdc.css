@@ -243,13 +243,14 @@ p {
   }
 }
 
+/* Navigation Bar*/
 .col-12 li {
+  margin-top: -5rem;
   display: inline-block;
   font-size: 1.2rem;
   border-radius: 2px;
 }
 
-/* Navigation Bar*/
 .col-12 li a {
   display: block;
   padding: 10px 16px;
@@ -266,18 +267,18 @@ p {
   border-radius: 2px;
 }
 
-.activemenu{
+.activemenu {
   background-color: #86c232;
 }
-
 /* End of Navigation Bar*/
+
 /*Title*/
 .col-12 h1 {
   color: #86c232;
   font-family: 'Bangers';
   font-weight: 400;
   margin-top: -20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
