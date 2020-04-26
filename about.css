@@ -361,3 +361,20 @@ p {
     padding-bottom: 3rem;
   }
 }
+.fa{
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  transform: scale(1.0);
+  transition: transform 0.5s;
+}
+@media (max-width: 56.25rem)
+{
+  .fa{
+    padding: 1rem;
+  }
+}
+.fa:hover{
+  transform: scale(1.5);
+}
