@@ -365,6 +365,7 @@ p {
 .item4 img,
 .item6 img,
 .item5 img{
+  border-radius: 4px;
   transition: transform 0.75s ease;
 }
 .item1 img:hover,
@@ -373,8 +374,8 @@ p {
 .item4 img:hover,
 .item5 img:hover,
 .item6 img:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 50px 60px rgba(0, 0, 0, 0.91);
+  transform: scale(1.10);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.81);;
 }
 
 @media (max-width : 56.25rem) {
@@ -384,12 +385,13 @@ p {
   .item4 img:hover,
   .item5 img:hover,
   .item6 img:hover{
-    transform: scale(1.05);
+    transform: scale(1.0);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.91);
   }
 }
 
 /*End of Image Hover*/
+/*Footer*/
  .fa{
    padding: 2rem;
    font-size: 1.5rem;
@@ -407,3 +409,6 @@ p {
  .fa:hover{
    transform: scale(1.5);
  }
+.footertext h6{
+  color: #474b4f;
+}
