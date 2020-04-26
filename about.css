@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
 body {
   height: 100%;
   width: 100%;
@@ -243,12 +244,14 @@ p {
   }
 }
 
+/* Navigation Bar*/
 .col-12 li {
+  margin-top: -5rem;
   display: inline-block;
   font-size: 1.2rem;
+  border-radius: 2px;
 }
 
-/* Navigation Bar*/
 .col-12 li a {
   display: block;
   padding: 10px 16px;
@@ -262,9 +265,10 @@ p {
 
 .col-12 li a:hover {
   background-color: #86c232;
+  border-radius: 2px;
 }
 
-.activemenu{
+.activemenu {
   background-color: #86c232;
 }
 
@@ -275,7 +279,7 @@ p {
   font-family: 'Bangers';
   font-weight: 400;
   margin-top: -20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
@@ -286,10 +290,9 @@ p {
   font-weight: 500;
 }
 
-@media(max-width: 56.25rem)
-{
-  .l{
-    font-size : 4rem;
+@media(max-width: 56.25rem) {
+  .l {
+    font-size: 4rem;
   }
 }
 
@@ -302,16 +305,20 @@ p {
 #initiative {
   font-family: courier new;
 }
+.roles{
+  font-weight: 600;
+}
 
 /*End of title*/
 /*Grid for about section*/
-.grid_about{
+.grid_about {
   display: grid;
   grid-template-columns: 14.75rem 14.75rem 14.75rem 14.75rem;
   grid-template-rows: 14.75rem 14.75rem 14.75rem 14.75rem;
   margin-top: 4rem;
   grid-gap: 3rem;
 }
+
 @media(max-width : 56.25rem) {
   .grid_about {
     display: flex;
@@ -319,20 +326,26 @@ p {
     flex-direction: column;
   }
 }
+
 .a1 img,
 .a2 img,
 .a3 img,
-.a4 img{
+.a4 img {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.0);
+  transition: transform 1s ease;
 }
+
 @media(max-width : 56.25rem) {
+
   .a1 img,
   .a2 img,
   .a3 img,
-  .a4 img{
+  .a4 img {
     width: 70%;
     height: 70%;
     text-align: center;
@@ -341,27 +354,49 @@ p {
   }
 }
 
-.t1,.t2,.t3,.t4{
+.a1 img:hover,
+.a2 img:hover,
+.a3 img:hover,
+.a4 img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 50px 60px rgba(0, 0, 0, 0.91);
+}
+
+@media (max-width : 56.25rem) {
+
+  .a1 img:hover,
+  .a2 img:hover,
+  .a3 img:hover,
+  .a4 img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.t1, .t2, .t3, .t4 {
   grid-column: 2 / span 4;
   text-align: left;
   padding-left: 3rem;
 }
 
 @media(max-width : 56.25rem) {
-  .t1,.t2,.t3,.t4{
+  .t1, .t2, .t3, .t4 {
     text-align: center;
     padding-left: 0px;
   }
-  .t1 h2,.t3 h2,.t2 h2,.t4 h2{
+
+  .t1 h2, .t3 h2, .t2 h2, .t4 h2 {
     font-size: 1.3rem;
   }
-  .t1 p,.t3 p,.t2 p,.t4 p{
+
+  .t1 p, .t3 p, .t2 p, .t4 p {
     margin-top: -0.8rem;
     font-size: 0.865rem;
     padding-bottom: 3rem;
   }
 }
-.fa{
+
+/*Footer*/
+.fa {
   padding: 2rem;
   font-size: 1.5rem;
   margin-top: 4rem;
@@ -369,12 +404,13 @@ p {
   transform: scale(1.0);
   transition: transform 0.5s;
 }
-@media (max-width: 56.25rem)
-{
-  .fa{
+
+@media (max-width: 56.25rem) {
+  .fa {
     padding: 1rem;
   }
 }
-.fa:hover{
+
+.fa:hover {
   transform: scale(1.5);
 }
