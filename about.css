@@ -304,3 +304,60 @@ p {
 }
 
 /*End of title*/
+/*Grid for about section*/
+.grid_about{
+  display: grid;
+  grid-template-columns: 14.75rem 14.75rem 14.75rem 14.75rem;
+  grid-template-rows: 14.75rem 14.75rem 14.75rem 14.75rem;
+  margin-top: 4rem;
+  grid-gap: 3rem;
+}
+@media(max-width : 56.25rem) {
+  .grid_about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.a1 img,
+.a2 img,
+.a3 img,
+.a4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media(max-width : 56.25rem) {
+  .a1 img,
+  .a2 img,
+  .a3 img,
+  .a4 img{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.t1,.t2,.t3,.t4{
+  grid-column: 2 / span 4;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+@media(max-width : 56.25rem) {
+  .t1,.t2,.t3,.t4{
+    text-align: center;
+    padding-left: 0px;
+  }
+  .t1 h2,.t3 h2,.t2 h2,.t4 h2{
+    font-size: 1.3rem;
+  }
+  .t1 p,.t3 p,.t2 p,.t4 p{
+    margin-top: -0.8rem;
+    font-size: 0.865rem;
+    padding-bottom: 3rem;
+  }
+}
