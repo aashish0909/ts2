@@ -246,9 +246,18 @@ p {
 /* Navigation Bar*/
 .col-12 li {
   margin-top: -5rem;
+  margin: 0 2rem;
   display: inline-block;
   font-size: 1.2rem;
   border-radius: 2px;
+}
+
+@media(max-width : 56.25rem) {
+  .col-12 li{
+    margin-top: -5rem;
+    margin:0 0;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .col-12 li a {
@@ -302,10 +311,6 @@ p {
   font-weight: 200;
 }
 
-#initiative {
-  font-family: courier new;
-}
-
 /*End of title*/
 
 /*Image Grid*/
@@ -319,13 +324,9 @@ p {
 
 @media(max-width : 56.25rem) {
   .grid_container {
-    max-height: 40rem;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
   }
 }
 
@@ -409,6 +410,17 @@ p {
  }
  .fa:hover{
    transform: scale(1.5);
+ }
+ .fa-instagram:hover {
+   color: rgb(221, 42, 123);
+ }
+
+ .fa-github:hover {
+   color: rgb(255, 255, 255);
+ }
+
+ .fa-twitter:hover {
+   color: #00ACEE;
  }
 .footertext h6{
   color: #474b4f;
